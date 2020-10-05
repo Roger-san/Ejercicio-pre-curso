@@ -1,0 +1,313 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  color: gray;
+  text-decoration: none;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h3 {
+  padding-top: 38px;
+}
+h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-style: italic;
+  background-color: black;
+  color: white;
+  padding: 2.5rem;
+}
+h6 {
+  color: gray;
+  padding-top: 0.3rem;
+}
+
+article {
+  text-align: center;
+}
+
+section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+section p {
+  padding: 1rem;
+}
+.xl {
+  display: none;
+}
+
+/* menu */
+
+#menu {
+  background-color: black;
+  color: grey;
+  font-size: 1rem;
+  font-weight: 600;
+  position: fixed;
+  width: 100%;
+}
+:hover.color {
+  transition: 0.5s;
+  color: white;
+}
+#menu-top,
+#sub-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu-top {
+  padding: 10px 40px;
+}
+#sub-menu {
+  flex-direction: column;
+}
+#sub-menu > a {
+  border-bottom: 1px gray solid;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+.hidden {
+  display: none !important;
+}
+
+/* home */
+
+.home-pic {
+  background-image: url("img/home.jpg");
+  background-size: cover;
+}
+.home {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align-last: center;
+  padding-top: 38px;
+  padding: 20% 0px;
+  color: white;
+  text-shadow: black 0px 0px 2px;
+}
+.home > * {
+  margin: 10px;
+}
+.button {
+  font-size: 0.8rem;
+  padding: 8px;
+  border: white solid 1px;
+  box-shadow: black 0px 0px 2px;
+}
+
+/* our story / dream team */
+
+.title {
+  padding: 1rem 0px;
+}
+.title > p {
+  color: gray;
+}
+.line {
+  display: inline-block;
+  width: 75px;
+  border-bottom: black solid 2px;
+}
+.circle {
+  padding: 2rem;
+  border-radius: 100%;
+}
+
+/* servicios */
+
+.twitter {
+  position: relative;
+  top: 3px;
+  height: 15px;
+  padding: 0px 5px;
+}
+.twit {
+  font-weight: 600;
+  padding-bottom: 4rem;
+}
+.pic {
+  width: 90%;
+  padding: 3rem 0px;
+}
+.services > section:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* contacto */
+
+form {
+  padding: 4rem 0px;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+input {
+  display: block;
+  width: 100%;
+  border-bottom: solid #cccccc 2px;
+  padding: 0.5rem 0px;
+  margin-top: 1rem;
+  color: #999999;
+  font-weight: 600;
+}
+label {
+  color: #999999;
+  display: block;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+textarea {
+  border: solid #cccccc 1px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.submit {
+  margin: 1rem 0px;
+  border-bottom: 0px;
+}
+.footer {
+  color: gray;
+}
+.footer > p {
+  color: black;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  background-color: black;
+  text-align: center;
+  color: gray;
+}
+.arrow {
+  display: inline-block;
+  transform: rotate(45deg);
+  width: 12px;
+  height: 12px;
+  border: gray solid;
+  border-width: 3px 0px 0px 3px;
+  color: gray;
+}
+.footer p,
+a {
+  font-weight: 600;
+  padding: 0px !important;
+}
+.links img {
+  width: 10%;
+  max-width: 50px;
+  background-color: #464646;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+@media (min-width: 786px) {
+  section > p {
+    padding: 1rem 0rem;
+  }
+  .xl {
+    display: block;
+  }
+  .s ,.menu{
+    display: none!important;
+  }
+  article {
+    max-width: 960px;
+    margin: auto;
+  }
+
+  /* menu */
+
+  .logo {
+    width: 20%;
+    display: inline-block;
+  }
+  .menu,
+  #sub-menu,
+  #menu-top {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  #menu-top a {
+    margin: 0px 2rem;
+  }
+  #menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 3rem;
+  }
+  #menu img {
+    margin: 10px;
+  }
+
+  /* dream team */
+
+  #team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  #team section {
+    width: 30%;
+  }
+
+  /* servicios */
+
+  .pic {
+    padding: 1rem;
+    flex: 1 0 auto;
+    width: auto;
+  }
+  .sev-p {
+    padding: 1rem;
+    flex: 1 1 auto;
+  }
+  .sev-p h4 {
+    padding-bottom: 2rem;
+  }
+  .title > p {
+    padding: 1rem;
+  }
+  .services section {
+    display: flex;
+  }
+
+  /* contacto */
+
+  #con {
+    display: flex;
+  }
+  .form {
+    flex-basis: 80%;
+    flex-shrink: 1;
+  }
+  .footer {
+    padding-top: 4rem;
+    text-align: left;
+    flex-shrink: 8;
+  }
+  form {
+    padding: 4rem 0px;
+    width: 90%;
+    margin: auto;
+  }
+
+}
