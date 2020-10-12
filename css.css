@@ -60,14 +60,17 @@ section p {
   transition: 0.5s;
   color: white;
 }
+.menu{
+  align-self: center;
+}
 #menu-top,
 #sub-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0 2rem;
 }
-#menu-top {
-  padding: 10px 40px;
+#menu-top>img{
+  margin: 0.5rem;
 }
 #sub-menu {
   flex-direction: column;
@@ -238,20 +241,22 @@ a {
     width: 20%;
     display: inline-block;
   }
-  .menu,
   #sub-menu,
   #menu-top {
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
     align-items: center;
+    padding: 0px;
   }
-  #menu-top a {
-    margin: 0px 2rem;
+  #menu-top{
+    width: 50%;
   }
   #menu {
     display: flex;
     justify-content: space-between;
     padding: 0px 3rem;
+    box-sizing: border-box;
+    z-index: 100;
   }
   #menu img {
     margin: 10px;
